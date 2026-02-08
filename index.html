@@ -4,9 +4,6 @@
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>GoRide Jaipur Taxi Service | Airport Taxi Jaipur | 24x7 Cab</title>
-
-  <meta name="google-site-verification" content="AbCdEfGh123456" />
-  
 <meta name="description" content="Go Ride Jaipur Taxi Service – Airport Pickup Drop Jaipur, Local Cab Service Jaipur, Outstation Taxi from Jaipur. Premium 24x7 taxi booking with instant WhatsApp."/>
 <meta name="keywords" content="Jaipur Taxi Service, Jaipur Airport Taxi, Airport Pickup Drop Jaipur, Local Cab Service Jaipur, Outstation Taxi from Jaipur, 24x7 Taxi Jaipur, Reliable Cab Service Jaipur"/>
 <style>
@@ -160,6 +157,50 @@ footer .foot p{opacity:.9}
 .map-link:hover{transform:translateX(4px)}
 .copyright{border-top:1px solid rgba(255,255,255,.08);text-align:center;padding:12px;margin:0 0 16px;color:#b9c0ff;background:linear-gradient(180deg,#050814,#02040c);position:relative;}
 
+
+/* SOCIAL LINKS */
+.social-box{
+  margin-top:1px;
+}
+
+.social-box h4{
+  color:var(--gold);
+  margin-bottom:20px;
+}
+
+.social-links{
+  display:flex;
+  gap:14px;
+}
+
+.social-links a{
+  width:44px;
+  height:44px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:50%;
+  font-size:20px;
+  text-decoration:none;
+  transition:0.3s;
+}
+
+.social-links a:hover{
+  transform:scale(1.15);
+}
+
+.social-links .fb{
+  background:#1877f2;
+  color:#fff;
+}
+
+.social-links .insta{
+  background:linear-gradient(135deg,#F58529,#DD2A7B,#8134AF,#515bd4);
+  color:#fff;
+}
+
+
+
 /* Floating buttons */
 .float{position:fixed;right:14px;width:56px;height:56px;border-radius:50%;display:grid;place-items:center;font-size:22px;text-decoration:none;z-index:999;transition:.3s}
 .call{bottom:150px;background:linear-gradient(135deg,#c9a24d,#f5d76e);color:#1a1300;animation:pulse 1.6s infinite}
@@ -267,7 +308,7 @@ footer .foot p{opacity:.9}
     <input id="pickup" placeholder="Pickup Address" required>
     <select id="service"><option>Airport</option><option>Local</option><option>Outstation</option></select>
     <button class="btn" onclick="bookWA()">Send Booking on WhatsApp</button>
-    <div class="result" id="bookMsg">📞 Call/WhatsApp: +91-9257672169</div>
+    <div class="result" id="bookMsg" style="cursor: pointer;">📞 Call/WhatsApp: +91-9257672169</div>
   </div>
 </section>
 
@@ -276,6 +317,8 @@ footer .foot p{opacity:.9}
     <div>
       <h4>About Go Ride</h4>
       <p>Premium Jaipur Taxi Service with professional drivers, luxury fleet & on-time rides.</p>
+      <br>
+      <p>Your trusted partner for seamless travel services.</p>
       <div class="badges" style="margin-top:10px">
         <span class="badge">Commercial Compliance</span>
         <span class="badge">Driver Verified</span>
@@ -287,12 +330,32 @@ footer .foot p{opacity:.9}
       <p>📞+91 9257672169</p>
       <p>💬 WhatsApp: +91 9257672169</p>
       <p>⏰ 24x7 Available</p>
+       <a href="mailto:goride.jpr.taxi@gmail.com" style="text-decoration: none;">✉️ goride.jpr.taxi@gmail.com</a>
+       <p style="line-height:1.6;"><br>
+  📍 <strong>Our Address</strong><br>
+  Bilwa, Tonk Road,<br>
+  Jaipur, Rajasthan – 302022
+</p>
+</div>
+
+      <!-- 🔥 FOLLOW US SECTION -->
+  <div class="social-box">
+    <h4>Follow Us</h4>
+    <div class="social-links">
+      <a href="https://www.facebook.com/profile.php?id=61587316577553" target="_blank" class="fb">f</a>
+      <a href="https://www.instagram.com/goride_taxi_services?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="insta">📸</a>
     </div>
+  </div>
+</div>
+
+
     <div>
-      <h4>Service Areas</h4>
-      <p>Jaipur • Ajmer • Udaipur • Delhi</p>
-      <p>Airport • Local • Outstation</p>
+      <h4 style="margin-left: 60px;">Service Areas</h4>
+      <br>
+      <p style="margin-left: 30px;">Jaipur • Ajmer • Udaipur • Delhi</p>
+      <p style="margin-left: 30px;">Airport • Local • Outstation</p>
     </div>
+    <br><br><br>
     <div>
       <h4>Our Location</h4>
       <div class="map">
@@ -397,7 +460,6 @@ Service: ${encodeURIComponent(service)}%0ACity: Jaipur`;
 </script>
 </body>
 </html>
-
 
 
 
