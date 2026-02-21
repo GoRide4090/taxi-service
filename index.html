@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,7 +10,7 @@
 <meta name="geo.region" content="IN-RJ">
 <meta name="geo.placename" content="Jaipur, Rajasthan">
 <meta name="description" content="Go Ride Jaipur Taxi Service – Airport Pickup Drop Jaipur, Local Cab Service Jaipur, Outstation Taxi from Jaipur. Premium 24x7 taxi booking with instant WhatsApp."/>
-<meta name="keywords" content="Jaipur Taxi Service, Jaipur Airport Taxi, Airport Pickup Drop Jaipur, Local Cab Service Jaipur, Outstation Taxi from Jaipur, 24x7 Taxi Jaipur, taxi near me, jaipur taxi, goride taxi, go ride, Reliable Cab Service Jaipur"/>
+<meta name="keywords" content="Jaipur Taxi Service, Jaipur Airport Taxi, Airport Pickup Drop Jaipur, Local Cab Service Jaipur, Outstation Taxi from Jaipur, 24x7 Taxi Jaipur, taxi near me, jaipur taxi, goride taxi, go ride, Reliable Cab Service Jaipur, taxi in jaipur, best taxi in jaipur"/>
 <meta name="robots" content="index, follow">
 <style>
 :root{
@@ -44,6 +45,7 @@ header{
   justify-content:space-between;
   padding:0 16px;
   z-index:999
+  
 }
 
 .brand{
@@ -366,25 +368,26 @@ footer .foot p{opacity:.9}
     <h1>GoRide</h1>
   </div>
 
-  <nav>
+  <nav style="cursor: pointer;">
       <a href="#about">About</a>
       <a href="#services">Services</a>
       <a href="#safety">Safety</a>
     </nav>
 
   <!-- <a class="btn" href="#book">Book Now</a> -->
-
+  
 </header>
 
 
 <section class="hero">
   <div class="hero-wrap">
-    <h1>Drive the Future of City Travel With <span style="color: goldenrod; margin-bottom: 10px;"> GoRide</span></h1>
-    <p>Airport Taxi • Local Cab • Outstation • 24x7 Reliable Service</p>
+<h1>Need a Cab In Jaipur ? <span style="color: goldenrod; margin-bottom: 10px;"> GoRide</span> Is Just One Click Away</h1>
+    <p>Airport Taxi • Local Cab • Outstation • On Time PickUp  • 24x7 Reliable Service </p>
     <div class="badges">
       <span class="badge">GPS Tracked Cabs</span>
       <span class="badge">Verified Drivers</span>
       <span class="badge">Sanitized Cars</span>
+      <span class="badge"> On Time PickUp</span>
       <span class="badge">24x7 Support</span>
     </div>
     <a class="btn" href="#book" style="margin-top:26px">Instant Booking</a>
@@ -443,6 +446,7 @@ footer .foot p{opacity:.9}
     <input id="name" placeholder="Your Name" required>
     <input id="phone" placeholder="Mobile Number" required>
     <input id="pickup" placeholder="Pickup Address" required>
+    <input id="drop" placeholder="Drop Address" required>
     <select id="service"><option>Airport</option><option>Local</option><option>Outstation</option></select>
     <button class="btn" onclick="bookWA()">Send Booking on WhatsApp</button>
     <div class="result" id="bookMsg" style="cursor: pointer;">📞 Call/WhatsApp: +91-9257672169</div>
@@ -745,30 +749,24 @@ function bookWA(){
   const name   = document.getElementById('name')?.value?.trim() || "Guest";
   const phone  = document.getElementById('phone')?.value?.trim() || "NA";
   const pickup = document.getElementById('pickup')?.value?.trim() || "NA";
+  const drop = document.getElementById('drop')?.value?.trim() || "NA";
   const service= document.getElementById('service')?.value || "NA";
 
   const msg = 
-`Hi Go Ride Taxi,%0A
+` Thank You for Choosing GoRide. We Truly Value Your Trust.%0A
 Name: ${encodeURIComponent(name)}%0A
 Phone: ${encodeURIComponent(phone)}%0A
 Pickup: ${encodeURIComponent(pickup)}%0A
+Drop: ${encodeURIComponent(drop)}%0A
 Service: ${encodeURIComponent(service)}%0ACity: Jaipur`;
 
-  const url = "https://wa.me/918690222052?text=" + msg;
+  const url = "https://wa.me/919257672169?text=" + msg;
   window.open(url, "_blank");
 }
 
 
-
-
-
-
-
-
-
-
-
-
+  
+/* ===== counter  (FIXED) ===== */
 
 const counters = document.querySelectorAll('.counter');
 let started = false;
@@ -804,12 +802,10 @@ function startCounter(){
 window.addEventListener('scroll', startCounter);
 
 
-
-
-
 </script>
 </body>
 </html>
+
 
 
 
