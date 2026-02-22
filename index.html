@@ -20,16 +20,6 @@
 html{scroll-behavior:smooth}
 body{background:radial-gradient(1200px 600px at 10% 0%, #0b1338, #050814);color:#fff;overflow-x:hidden}
 
-/* Header */
-/* header{position:fixed;top:0;left:0;width:100%;height:64px;background:rgba(7,11,24,.85);backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,.08);display:flex;align-items:center;justify-content:space-between;padding:0 16px;z-index:999}
-.brand{display:flex;gap:10px;align-items:center;cursor:pointer}
-.logo{width:36px;height:36px;border-radius:10px;background:linear-gradient(135deg,#c9a24d,#f5d76e);display:grid;place-items:center;font-weight:900;color:#1a1300;box-shadow:0 0 18px rgba(201,162,77,.6);transition:0.4s}
-.logo:hover{transform:rotate(15deg) scale(1.05)}
-.brand h1{color:var(--gold);font-size:18px;letter-spacing:1px;transition:0.3s}
-.btn{padding:10px 16px;border-radius:12px;text-decoration:none;color:#1a1300;background:linear-gradient(135deg,#c9a24d,#f5d76e);font-weight:800;transition:.3s;display:inline-block}
-.btn:hover{transform:translateY(-2px) scale(1.05);box-shadow:0 8px 24px rgba(201,162,77,.35)} */
-
-
 
 /* Header */
 header{
@@ -355,10 +345,6 @@ footer .foot p{opacity:.9}
 </head>
 <body>
 
-<!-- <header>
-  <div class="brand"><div class="logo">GR</div><h1> GoRide</h1></div>
-  <a class="btn" href="#book">Book Now</a>
-</header> -->
 
 <header>
   <div class="brand">
@@ -382,7 +368,7 @@ footer .foot p{opacity:.9}
 <section class="hero">
   <div class="hero-wrap">
 <h1>Need a Cab In Jaipur ? <span style="color: goldenrod; margin-bottom: 10px;"> GoRide</span> Is Just One Click Away</h1>
-    <p>Airport Taxi • Local Cab • Outstation • On Time PickUp  • 24x7 Reliable Service </p>
+    <p>Airport Taxi • Local Cab • Outstation • On Time PickUp  • 24x7 Reliable Service</p>
     <div class="badges">
       <span class="badge">GPS Tracked Cabs</span>
       <span class="badge">Verified Drivers</span>
@@ -430,13 +416,17 @@ footer .foot p{opacity:.9}
   <div class="h"><h3>Fare Calculator (Approx)</h3></div>
   <div class="calc">
     <select id="carType">
+      <option value="10">Economy – ₹10/km</option>
       <option value="12">Sedan – ₹12/km</option>
-      <option value="16">SUV – ₹16/km</option>
-      <option value="22">Luxury – ₹22/km</option>
+      <option value="15">SUV – ₹15/km</option>
+      <option value="23">Traveller – ₹23/km</option>
+      <option value="24">Luxury – ₹24/km</option>
+     
     </select>
     <input id="km" type="number" placeholder="Distance in KM"/>
     <button class="btn" onclick="calcFare()">Calculate Fare</button>
     <div class="result" id="fareResult">Enter KM to calculate fare</div>
+     <p style="font-size: 14px; color: lightgray; font-style: italic;">"Toll & Parking Extra | Night Charges (10PM-6AM) Apllicable"</p>
   </div>
 </section>
 
@@ -595,12 +585,6 @@ footer .foot p{opacity:.9}
 <!-- live counter -->
 
 
-
-
-
-
-
-
 <footer>
   <div class="foot">
     <div>
@@ -627,15 +611,7 @@ footer .foot p{opacity:.9}
 </p>
 </div>
 
-      <!-- 🔥 FOLLOW US SECTION -->
-  <!-- <div class="social-box">
-    <h4>Follow Us</h4>
-    <div class="social-links">
-      <a href="https://www.facebook.com/profile.php?id=61587316577553" target="_blank" class="fb">f</a>
-      <a href="https://www.instagram.com/goride_taxi_services?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="insta">📸</a>
-    </div>
-  </div>
-</div> -->
+     
 
 <div class="social-box">
   <h4>Follow Us</h4>
@@ -671,8 +647,8 @@ footer .foot p{opacity:.9}
   <div class="copyright" style="margin-bottom: 100px;">© 2026 GoRide Jaipur Taxi Service. All Rights Reserved.</div>
 </footer>
 
-<a class="float call" href="tel:+919257672169">📞</a>
-<a class="float wa" href="javascript:void(0)" onclick="document.getElementById('book').scrollIntoView({behavior:'smooth'})">💬</a>
+<a class="float call" href="tel:+919257672169" style="margin-bottom: 50px;">📞</a>
+<a class="float wa" href="javascript:void(0)" onclick="document.getElementById('book').scrollIntoView({behavior:'smooth'})" style="margin-bottom: 50px;">💬</a>
 
 <div class="sticky">
   <small>Need a cab now?</small>
@@ -765,8 +741,8 @@ Service: ${encodeURIComponent(service)}%0ACity: Jaipur`;
 }
 
 
-  
-/* ===== counter  (FIXED) ===== */
+
+/* ===== counter ===== */
 
 const counters = document.querySelectorAll('.counter');
 let started = false;
@@ -800,12 +776,8 @@ function startCounter(){
 }
 
 window.addEventListener('scroll', startCounter);
-
-
 </script>
+
+<script src="//code.tidio.co/n9lm4oklhyr61zblaitfy4dzw8buec7w.js" async></script>
 </body>
 </html>
-
-
-
-
